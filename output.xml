@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200825 20:32:39.824" rpa="false">
+<suite id="s1" name="dataDriven" source="D:\Smart Reasons\QA Testing curso\appium\dataDriven.robot">
+<kw name="Open my Browser" library="web" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>browser=${browser}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:40.524" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/'.</msg>
+<status status="PASS" starttime="20200825 20:32:40.524" endtime="20200825 20:32:45.743"></status>
+</kw>
+<kw name="Set Window Position" library="SeleniumLibrary">
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<arguments>
+<arg>0</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200825 20:32:45.743" endtime="20200825 20:32:47.989"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>960</arg>
+<arg>1000</arg>
+</arguments>
+<status status="PASS" starttime="20200825 20:32:47.989" endtime="20200825 20:32:48.112"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:32:40.523" endtime="20200825 20:32:48.113"></status>
+</kw>
+<test id="s1-t1" name="Descripcion pequeña">
+<kw name="Open Establecimiento" library="web" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_establecimiento}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:48.114" level="INFO">Opening url 'http://localhost:4200/delivery/configuracion/establecimiento'</msg>
+<status status="PASS" starttime="20200825 20:32:48.114" endtime="20200825 20:32:49.293"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:32:48.114" endtime="20200825 20:32:49.293"></status>
+</kw>
+<kw name="Invalid Text">
+<arguments>
+<arg>Pajaro loco</arg>
+<arg>El Pájaro Loco o Loquillo es un personaje animado creado por Walter Lantz</arg>
+<arg>10584658465</arg>
+<arg>45859654</arg>
+<arg>corro@gmaill.com</arg>
+<arg>958745621</arg>
+<arg>av. la luna</arg>
+<arg>Resultado test</arg>
+</arguments>
+<kw name="Text Area" library="web">
+<arguments>
+<arg>${nombre}</arg>
+<arg>${descripcion}</arg>
+<arg>${ruc}</arg>
+<arg>${dni}</arg>
+<arg>${correo}</arg>
+<arg>${telefono}</arg>
+<arg>${direccion}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="nombreEstablecimiento"]</arg>
+<arg>${nombre}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:49.295" level="INFO">Typing text 'Pajaro loco' into text field '//*[@id="nombreEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:49.295" endtime="20200825 20:32:49.992"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="descripcionEstablecimiento"]</arg>
+<arg>${descripcion}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:49.992" level="INFO">Typing text 'El Pájaro Loco o Loquillo es un personaje animado creado por Walter Lantz' into text field '//*[@id="descripcionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:49.992" endtime="20200825 20:32:50.857"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="rucEstablecimiento"]</arg>
+<arg>${ruc}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:50.857" level="INFO">Typing text '10584658465' into text field '//*[@id="rucEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:50.857" endtime="20200825 20:32:51.054"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="dniEstablecimiento"]</arg>
+<arg>${dni}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:51.055" level="INFO">Typing text '45859654' into text field '//*[@id="dniEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:51.054" endtime="20200825 20:32:51.217"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="correoEstablecimiento"]</arg>
+<arg>${correo}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:51.217" level="INFO">Typing text 'corro@gmaill.com' into text field '//*[@id="correoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:51.217" endtime="20200825 20:32:51.434"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="telefonoEstablecimiento"]</arg>
+<arg>${telefono}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:51.434" level="INFO">Typing text '958745621' into text field '//*[@id="telefonoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:51.434" endtime="20200825 20:32:51.588"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="direccionEstablecimiento"]</arg>
+<arg>${direccion}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:51.588" level="INFO">Typing text 'av. la luna' into text field '//*[@id="direccionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:51.588" endtime="20200825 20:32:51.760"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:32:49.294" endtime="20200825 20:32:51.760"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Estas pruebas :v"</arg>
+</arguments>
+<msg timestamp="20200825 20:32:51.760" level="INFO">"Estas pruebas :v"</msg>
+<status status="PASS" starttime="20200825 20:32:51.760" endtime="20200825 20:32:51.760"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200825 20:32:56.762" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200825 20:32:51.761" endtime="20200825 20:32:56.762"></status>
+</kw>
+<kw name="Result" library="web">
+<arguments>
+<arg>${mensaje}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="labelTest"]</arg>
+<arg>${mensaje}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:56.762" level="INFO">Verifying element '//*[@id="labelTest"]' contains exact text 'Resultado test'.</msg>
+<status status="PASS" starttime="20200825 20:32:56.762" endtime="20200825 20:32:56.790"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:32:56.762" endtime="20200825 20:32:56.790"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:32:49.293" endtime="20200825 20:32:56.790"></status>
+</kw>
+<doc>Descripcion muy pequeña</doc>
+<status status="PASS" starttime="20200825 20:32:48.113" endtime="20200825 20:32:56.791" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Descripcion de 50 caracteres">
+<kw name="Open Establecimiento" library="web" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_establecimiento}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:56.797" level="INFO">Opening url 'http://localhost:4200/delivery/configuracion/establecimiento'</msg>
+<status status="PASS" starttime="20200825 20:32:56.797" endtime="20200825 20:32:58.274"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:32:56.796" endtime="20200825 20:32:58.274"></status>
+</kw>
+<kw name="Invalid Text">
+<arguments>
+<arg>Nobody</arg>
+<arg>Nobody is sure how it happened, but Sally and Bill fell hopelessly in love, and ended up getting married. They moved into a small flat together, and paid incredibly high rent for a few years, until Sally announced that she was pregnant.</arg>
+<arg>3656569</arg>
+<arg>5482</arg>
+<arg>corea?</arg>
+<arg>932548758</arg>
+<arg>estoy en la luna</arg>
+<arg>Nel pastel</arg>
+</arguments>
+<kw name="Text Area" library="web">
+<arguments>
+<arg>${nombre}</arg>
+<arg>${descripcion}</arg>
+<arg>${ruc}</arg>
+<arg>${dni}</arg>
+<arg>${correo}</arg>
+<arg>${telefono}</arg>
+<arg>${direccion}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="nombreEstablecimiento"]</arg>
+<arg>${nombre}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:58.276" level="INFO">Typing text 'Nobody' into text field '//*[@id="nombreEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:58.276" endtime="20200825 20:32:58.481"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="descripcionEstablecimiento"]</arg>
+<arg>${descripcion}</arg>
+</arguments>
+<msg timestamp="20200825 20:32:58.482" level="INFO">Typing text 'Nobody is sure how it happened, but Sally and Bill fell hopelessly in love, and ended up getting married. They moved into a small flat together, and paid incredibly high rent for a few years, until Sally announced that she was pregnant.' into text field '//*[@id="descripcionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:32:58.482" endtime="20200825 20:33:00.346"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="rucEstablecimiento"]</arg>
+<arg>${ruc}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:00.346" level="INFO">Typing text '3656569' into text field '//*[@id="rucEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:00.346" endtime="20200825 20:33:00.496"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="dniEstablecimiento"]</arg>
+<arg>${dni}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:00.497" level="INFO">Typing text '5482' into text field '//*[@id="dniEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:00.496" endtime="20200825 20:33:00.642"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="correoEstablecimiento"]</arg>
+<arg>${correo}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:00.643" level="INFO">Typing text 'corea?' into text field '//*[@id="correoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:00.642" endtime="20200825 20:33:00.765"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="telefonoEstablecimiento"]</arg>
+<arg>${telefono}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:00.765" level="INFO">Typing text '932548758' into text field '//*[@id="telefonoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:00.765" endtime="20200825 20:33:00.922"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="direccionEstablecimiento"]</arg>
+<arg>${direccion}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:00.923" level="INFO">Typing text 'estoy en la luna' into text field '//*[@id="direccionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:00.923" endtime="20200825 20:33:01.123"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:32:58.275" endtime="20200825 20:33:01.123"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Estas pruebas :v"</arg>
+</arguments>
+<msg timestamp="20200825 20:33:01.124" level="INFO">"Estas pruebas :v"</msg>
+<status status="PASS" starttime="20200825 20:33:01.124" endtime="20200825 20:33:01.124"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200825 20:33:06.126" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200825 20:33:01.124" endtime="20200825 20:33:06.126"></status>
+</kw>
+<kw name="Result" library="web">
+<arguments>
+<arg>${mensaje}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="labelTest"]</arg>
+<arg>${mensaje}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:06.127" level="INFO">Verifying element '//*[@id="labelTest"]' contains exact text 'Nel pastel'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200825 20:33:06.459" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200825 20:33:06.151" endtime="20200825 20:33:06.459"></status>
+</kw>
+<msg timestamp="20200825 20:33:06.461" level="FAIL">The text of element '//*[@id="labelTest"]' should have been 'Nel pastel' but it was 'Resultado test'.</msg>
+<status status="FAIL" starttime="20200825 20:33:06.126" endtime="20200825 20:33:06.461"></status>
+</kw>
+<status status="FAIL" starttime="20200825 20:33:06.126" endtime="20200825 20:33:06.461"></status>
+</kw>
+<status status="FAIL" starttime="20200825 20:32:58.275" endtime="20200825 20:33:06.462"></status>
+</kw>
+<doc>Descripcion de 50 caracteres</doc>
+<status status="FAIL" starttime="20200825 20:32:56.796" endtime="20200825 20:33:06.462" critical="yes">The text of element '//*[@id="labelTest"]' should have been 'Nel pastel' but it was 'Resultado test'.</status>
+</test>
+<test id="s1-t3" name="Descripcion de 100 caracteres">
+<kw name="Open Establecimiento" library="web" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_establecimiento}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:06.465" level="INFO">Opening url 'http://localhost:4200/delivery/configuracion/establecimiento'</msg>
+<status status="PASS" starttime="20200825 20:33:06.464" endtime="20200825 20:33:08.112"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:06.464" endtime="20200825 20:33:08.112"></status>
+</kw>
+<kw name="Invalid Text">
+<arguments>
+<arg>Vacaciones primero diez</arg>
+<arg>En las vacaciones de este año primero fui diez días a un hotel con mi familia, en el hotel de al lado estaba un amigo y todos los días salíamos juntos a la piscina, a la playa, etc.En el hotel había un bufete donde íbamos a desayunar, almorzar y cenar, por la noche paseábamos por el paseo marítimo mientras nos tomábamos un helado, algunos días íbamos a otras playas que estaban más lejos del hotel, algunas eran salvajes, tenían el agua cristalina y había muchos peces y plantas, otros días los pasábamos en la piscina que era muy grande.</arg>
+<arg>54889665695</arg>
+<arg>14</arg>
+<arg>bestin@.com</arg>
+<arg>54872546</arg>
+<arg>mi casa esta cerca</arg>
+<arg>Resultado test</arg>
+</arguments>
+<kw name="Text Area" library="web">
+<arguments>
+<arg>${nombre}</arg>
+<arg>${descripcion}</arg>
+<arg>${ruc}</arg>
+<arg>${dni}</arg>
+<arg>${correo}</arg>
+<arg>${telefono}</arg>
+<arg>${direccion}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="nombreEstablecimiento"]</arg>
+<arg>${nombre}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:08.114" level="INFO">Typing text 'Vacaciones primero diez' into text field '//*[@id="nombreEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:08.114" endtime="20200825 20:33:08.455"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="descripcionEstablecimiento"]</arg>
+<arg>${descripcion}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:08.456" level="INFO">Typing text 'En las vacaciones de este año primero fui diez días a un hotel con mi familia, en el hotel de al lado estaba un amigo y todos los días salíamos juntos a la piscina, a la playa, etc.En el hotel había un bufete donde íbamos a desayunar, almorzar y cenar, por la noche paseábamos por el paseo marítimo mientras nos tomábamos un helado, algunos días íbamos a otras playas que estaban más lejos del hotel, algunas eran salvajes, tenían el agua cristalina y había muchos peces y plantas, otros días los pasábamos en la piscina que era muy grande.' into text field '//*[@id="descripcionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:08.456" endtime="20200825 20:33:12.376"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="rucEstablecimiento"]</arg>
+<arg>${ruc}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:12.376" level="INFO">Typing text '54889665695' into text field '//*[@id="rucEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:12.376" endtime="20200825 20:33:12.553"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="dniEstablecimiento"]</arg>
+<arg>${dni}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:12.554" level="INFO">Typing text '14' into text field '//*[@id="dniEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:12.553" endtime="20200825 20:33:12.646"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="correoEstablecimiento"]</arg>
+<arg>${correo}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:12.647" level="INFO">Typing text 'bestin@.com' into text field '//*[@id="correoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:12.646" endtime="20200825 20:33:12.813"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="telefonoEstablecimiento"]</arg>
+<arg>${telefono}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:12.813" level="INFO">Typing text '54872546' into text field '//*[@id="telefonoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:12.813" endtime="20200825 20:33:12.957"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="direccionEstablecimiento"]</arg>
+<arg>${direccion}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:12.957" level="INFO">Typing text 'mi casa esta cerca' into text field '//*[@id="direccionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:12.957" endtime="20200825 20:33:13.175"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:08.113" endtime="20200825 20:33:13.175"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Estas pruebas :v"</arg>
+</arguments>
+<msg timestamp="20200825 20:33:13.175" level="INFO">"Estas pruebas :v"</msg>
+<status status="PASS" starttime="20200825 20:33:13.175" endtime="20200825 20:33:13.175"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200825 20:33:18.176" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200825 20:33:13.175" endtime="20200825 20:33:18.176"></status>
+</kw>
+<kw name="Result" library="web">
+<arguments>
+<arg>${mensaje}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="labelTest"]</arg>
+<arg>${mensaje}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:18.176" level="INFO">Verifying element '//*[@id="labelTest"]' contains exact text 'Resultado test'.</msg>
+<status status="PASS" starttime="20200825 20:33:18.176" endtime="20200825 20:33:18.199"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:18.176" endtime="20200825 20:33:18.199"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:08.112" endtime="20200825 20:33:18.199"></status>
+</kw>
+<doc>Descripcion de 100 caracteres</doc>
+<status status="PASS" starttime="20200825 20:33:06.463" endtime="20200825 20:33:18.200" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Descripcion de 200 caracteres">
+<kw name="Open Establecimiento" library="web" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_establecimiento}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:18.204" level="INFO">Opening url 'http://localhost:4200/delivery/configuracion/establecimiento'</msg>
+<status status="PASS" starttime="20200825 20:33:18.204" endtime="20200825 20:33:19.719"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:18.203" endtime="20200825 20:33:19.719"></status>
+</kw>
+<kw name="Invalid Text">
+<arguments>
+<arg>setenta barrios ausencia</arg>
+<arg>El día de mis setenta cumpleaños volví a mi barrio después de una ausencia de cincuenta años. Me lo concedí como regalo. Quería saborear despacio mis recuerdos. Mansamente, recorrí la estrecha acera que llevaba a mi colegio y volví a ver a mis amigos, a escuchar el crujir de las hojas muertas bajo mis zapatillas, a sentir la mirada precavida de los vecinos clavada en mi nuca, las pistas dibujadas en el asfalto donde hacíamos rodar los cochecitos rellenos de masilla, la pelota de goma, las canicas, los cromos… Mentalmente, en mi paseo, me recordé furtivo en algunos de los inexistentes portales donde robé (o me robaron) los primeros besos, imaginé la impronta del corazón y la flecha con que juré mi primer amor eterno, acaricié la madera de algún viejo banco, arrastré mi mano por las paredes lisas como hacía siempre que recorría el trayecto y me perdí, sin saberlo, como un alma libre cargada de sueños y de esperanzas, en la fronda tupida de la arboleda del paseo donde por primera vez dije un tímido “te quiero”. Aquel día, hasta que me quedé sin chocolate, volví a ser el tímido rubito que siempre andaba con la boca sucia.</arg>
+<arg>2021589995</arg>
+<arg>54787415</arg>
+<arg>este es mi correo</arg>
+<arg>2154</arg>
+<arg>la direccion</arg>
+<arg>Resultado test</arg>
+</arguments>
+<kw name="Text Area" library="web">
+<arguments>
+<arg>${nombre}</arg>
+<arg>${descripcion}</arg>
+<arg>${ruc}</arg>
+<arg>${dni}</arg>
+<arg>${correo}</arg>
+<arg>${telefono}</arg>
+<arg>${direccion}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="nombreEstablecimiento"]</arg>
+<arg>${nombre}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:19.721" level="INFO">Typing text 'setenta barrios ausencia' into text field '//*[@id="nombreEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:19.721" endtime="20200825 20:33:20.065"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="descripcionEstablecimiento"]</arg>
+<arg>${descripcion}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:20.066" level="INFO">Typing text 'El día de mis setenta cumpleaños volví a mi barrio después de una ausencia de cincuenta años. Me lo concedí como regalo. Quería saborear despacio mis recuerdos. Mansamente, recorrí la estrecha acera que llevaba a mi colegio y volví a ver a mis amigos, a escuchar el crujir de las hojas muertas bajo mis zapatillas, a sentir la mirada precavida de los vecinos clavada en mi nuca, las pistas dibujadas en el asfalto donde hacíamos rodar los cochecitos rellenos de masilla, la pelota de goma, las canicas, los cromos… Mentalmente, en mi paseo, me recordé furtivo en algunos de los inexistentes portales donde robé (o me robaron) los primeros besos, imaginé la impronta del corazón y la flecha con que juré mi primer amor eterno, acaricié la madera de algún viejo banco, arrastré mi mano por las paredes lisas como hacía siempre que recorría el trayecto y me perdí, sin saberlo, como un alma libre cargada de sueños y de esperanzas, en la fronda tupida de la arboleda del paseo donde por primera vez dije un tímido “te quiero”. Aquel día, hasta que me quedé sin chocolate, volví a ser el tímido rubito que siempre andaba con la boca sucia.' into text field '//*[@id="descripcionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:20.065" endtime="20200825 20:33:28.829"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="rucEstablecimiento"]</arg>
+<arg>${ruc}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:28.829" level="INFO">Typing text '2021589995' into text field '//*[@id="rucEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:28.829" endtime="20200825 20:33:28.987"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="dniEstablecimiento"]</arg>
+<arg>${dni}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:28.988" level="INFO">Typing text '54787415' into text field '//*[@id="dniEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:28.987" endtime="20200825 20:33:29.136"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="correoEstablecimiento"]</arg>
+<arg>${correo}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:29.136" level="INFO">Typing text 'este es mi correo' into text field '//*[@id="correoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:29.136" endtime="20200825 20:33:29.366"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="telefonoEstablecimiento"]</arg>
+<arg>${telefono}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:29.366" level="INFO">Typing text '2154' into text field '//*[@id="telefonoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:29.366" endtime="20200825 20:33:29.487"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="direccionEstablecimiento"]</arg>
+<arg>${direccion}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:29.487" level="INFO">Typing text 'la direccion' into text field '//*[@id="direccionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:29.487" endtime="20200825 20:33:29.669"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:19.720" endtime="20200825 20:33:29.670"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Estas pruebas :v"</arg>
+</arguments>
+<msg timestamp="20200825 20:33:29.670" level="INFO">"Estas pruebas :v"</msg>
+<status status="PASS" starttime="20200825 20:33:29.670" endtime="20200825 20:33:29.670"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200825 20:33:34.672" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200825 20:33:29.670" endtime="20200825 20:33:34.672"></status>
+</kw>
+<kw name="Result" library="web">
+<arguments>
+<arg>${mensaje}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="labelTest"]</arg>
+<arg>${mensaje}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:34.672" level="INFO">Verifying element '//*[@id="labelTest"]' contains exact text 'Resultado test'.</msg>
+<status status="PASS" starttime="20200825 20:33:34.672" endtime="20200825 20:33:34.702"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:34.672" endtime="20200825 20:33:34.702"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:19.720" endtime="20200825 20:33:34.703"></status>
+</kw>
+<doc>Descripcion de 200 caracteres</doc>
+<status status="PASS" starttime="20200825 20:33:18.202" endtime="20200825 20:33:34.703" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Descripcion nula">
+<kw name="Open Establecimiento" library="web" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_establecimiento}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:34.706" level="INFO">Opening url 'http://localhost:4200/delivery/configuracion/establecimiento'</msg>
+<status status="PASS" starttime="20200825 20:33:34.705" endtime="20200825 20:33:36.509"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:34.705" endtime="20200825 20:33:36.510"></status>
+</kw>
+<kw name="Invalid Text">
+<arguments>
+<arg>10254875954</arg>
+<arg>12345678</arg>
+<arg>5457@hot.co</arg>
+<arg>0</arg>
+<arg>post condicion</arg>
+<arg>Triste la vida</arg>
+</arguments>
+<kw name="Text Area" library="web">
+<arguments>
+<arg>${nombre}</arg>
+<arg>${descripcion}</arg>
+<arg>${ruc}</arg>
+<arg>${dni}</arg>
+<arg>${correo}</arg>
+<arg>${telefono}</arg>
+<arg>${direccion}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="nombreEstablecimiento"]</arg>
+<arg>${nombre}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:36.511" level="INFO">Typing text '' into text field '//*[@id="nombreEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:36.511" endtime="20200825 20:33:36.687"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="descripcionEstablecimiento"]</arg>
+<arg>${descripcion}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:36.688" level="INFO">Typing text '' into text field '//*[@id="descripcionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:36.687" endtime="20200825 20:33:36.813"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="rucEstablecimiento"]</arg>
+<arg>${ruc}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:36.814" level="INFO">Typing text '10254875954' into text field '//*[@id="rucEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:36.813" endtime="20200825 20:33:37.073"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="dniEstablecimiento"]</arg>
+<arg>${dni}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:37.074" level="INFO">Typing text '12345678' into text field '//*[@id="dniEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:37.073" endtime="20200825 20:33:37.291"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="correoEstablecimiento"]</arg>
+<arg>${correo}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:37.292" level="INFO">Typing text '5457@hot.co' into text field '//*[@id="correoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:37.291" endtime="20200825 20:33:37.497"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="telefonoEstablecimiento"]</arg>
+<arg>${telefono}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:37.497" level="INFO">Typing text '0' into text field '//*[@id="telefonoEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:37.497" endtime="20200825 20:33:37.594"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="direccionEstablecimiento"]</arg>
+<arg>${direccion}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:37.595" level="INFO">Typing text 'post condicion' into text field '//*[@id="direccionEstablecimiento"]'.</msg>
+<status status="PASS" starttime="20200825 20:33:37.595" endtime="20200825 20:33:37.846"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:36.511" endtime="20200825 20:33:37.846"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Estas pruebas :v"</arg>
+</arguments>
+<msg timestamp="20200825 20:33:37.847" level="INFO">"Estas pruebas :v"</msg>
+<status status="PASS" starttime="20200825 20:33:37.846" endtime="20200825 20:33:37.847"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200825 20:33:42.848" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200825 20:33:37.847" endtime="20200825 20:33:42.848"></status>
+</kw>
+<kw name="Result" library="web">
+<arguments>
+<arg>${mensaje}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="labelTest"]</arg>
+<arg>${mensaje}</arg>
+</arguments>
+<msg timestamp="20200825 20:33:42.849" level="INFO">Verifying element '//*[@id="labelTest"]' contains exact text 'Triste la vida'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200825 20:33:43.181" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200825 20:33:42.870" endtime="20200825 20:33:43.181"></status>
+</kw>
+<msg timestamp="20200825 20:33:43.181" level="FAIL">The text of element '//*[@id="labelTest"]' should have been 'Triste la vida' but it was 'Resultado test'.</msg>
+<status status="FAIL" starttime="20200825 20:33:42.848" endtime="20200825 20:33:43.181"></status>
+</kw>
+<status status="FAIL" starttime="20200825 20:33:42.848" endtime="20200825 20:33:43.181"></status>
+</kw>
+<status status="FAIL" starttime="20200825 20:33:36.510" endtime="20200825 20:33:43.182"></status>
+</kw>
+<doc>Descripcion nula</doc>
+<status status="FAIL" starttime="20200825 20:33:34.704" endtime="20200825 20:33:43.182" critical="yes">The text of element '//*[@id="labelTest"]' should have been 'Triste la vida' but it was 'Resultado test'.</status>
+</test>
+<kw name="Close Browsers" library="web" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200825 20:33:43.185" endtime="20200825 20:33:45.382"></status>
+</kw>
+<status status="PASS" starttime="20200825 20:33:43.184" endtime="20200825 20:33:45.382"></status>
+</kw>
+<status status="FAIL" starttime="20200825 20:32:39.826" endtime="20200825 20:33:45.382"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="2">Critical Tests</stat>
+<stat pass="3" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="2" id="s1" name="dataDriven">dataDriven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
