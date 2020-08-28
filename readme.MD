@@ -53,5 +53,5 @@ pip install robotframework-jsonlibrary
 - _Otra Libreria que utilizaremos para hacer Pruebas Más facilmente:_
 
 ```
-pip install --upgrade RESTinstance
+pip install RESTinstance
 ```
