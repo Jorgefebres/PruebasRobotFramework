@@ -35,3 +35,23 @@ pip install --upgrade robotframework-datadriver
 ```
 pip install --upgrade robotframework-datadriver[XLS]
 ```
+5. _Para Probar los servicios necesitaremos los siguiente paquetes_
+
+```
+pip install robotframework-requests
+```
+- _Para usar usar toda la capacidad de request:_
+
+```
+pip install robotframework-extendedrequestslibrary
+```
+- _Para manipular archivos JSON instalamos:_
+
+```
+pip install robotframework-jsonlibrary
+```
+- _Otra Libreria que utilizaremos para hacer Pruebas Más facilmente:_
+
+```
+pip install --upgrade RESTinstance
+```
