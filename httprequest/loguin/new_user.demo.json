@@ -1,0 +1,11 @@
+{
+    "value": {
+        "idError": 5005110,
+        "mensaje": "USUARIO INVALIDO",
+        "traza": "   at MSSeguridadApps.Repo.Implementaciones.UsuarioRepository.GenerateToken(Login login, Int32 IdModulo, Int16 obtencionToken) in /var/lib/jenkins/workspace/MSSeguridadApps_desarrollo/MSSeguridadApps.Repo/Implementaciones/UsuarioRepository.cs:line 362\r\n   at MSSeguridadApps.Controllers.Command.UsuariosController.Login(Int32 idEmpresa, Int32 idModulo) in /var/lib/jenkins/workspace/MSSeguridadApps_desarrollo/MSSeguridadApps/Controllers/Command/UsuariosController.cs:line 212"
+    },
+    "formatters": [],
+    "contentTypes": [],
+    "declaredType": null,
+    "statusCode": 400
+}

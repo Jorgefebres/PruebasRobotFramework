@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.4 on win32)" generated="20200827 20:18:40.106" rpa="false">
+<suite id="s1" name="Ppp" source="D:\SmartReasons\Pruebas\Pruebas App Y Web Robot\REPO\PruebasRobotFramework\httprequest\prueba\ppp.robot">
+<test id="s1-t1" name="testcase">
+<kw name="test">
+<arguments>
+<arg>${SUBSCRIBER_A}</arg>
+</arguments>
+<kw name="Load JSON From File" library="JSONLibrary">
+<doc>Load JSON from file.</doc>
+<arguments>
+<arg>sample.json</arg>
+</arguments>
+<assign>
+<var>${json_obj}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.464" level="INFO">${json_obj} = {'Phones': {'debug': 'on', 'phone1': {'key': 'value', 'driver': '1'}, 'phone2': {'key': 'value'}}}</msg>
+<status status="PASS" starttime="20200827 20:18:40.463" endtime="20200827 20:18:40.464"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>driver=1</arg>
+</arguments>
+<assign>
+<var>${object_to_add}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.465" level="INFO">${object_to_add} = {'driver': '1'}</msg>
+<status status="PASS" starttime="20200827 20:18:40.464" endtime="20200827 20:18:40.465"></status>
+</kw>
+<kw name="Add Object To Json" library="JSONLibrary">
+<doc>Add an dictionary or list object to json object using json_path</doc>
+<arguments>
+<arg>${json_obj}</arg>
+<arg>$..${SUBSCRIBER_A}</arg>
+<arg>${object_to_add}</arg>
+</arguments>
+<assign>
+<var>${json_obj}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.523" level="INFO">${json_obj} = {'Phones': {'debug': 'on', 'phone1': {'key': 'value', 'driver': '1'}, 'phone2': {'key': 'value'}}}</msg>
+<status status="PASS" starttime="20200827 20:18:40.465" endtime="20200827 20:18:40.523"></status>
+</kw>
+<kw name="Convert JSON To String" library="JSONLibrary">
+<doc>Convert JSON object to string</doc>
+<arguments>
+<arg>${json_obj}</arg>
+</arguments>
+<assign>
+<var>${new_obj}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.524" level="INFO">${new_obj} = {"Phones": {"debug": "on", "phone1": {"key": "value", "driver": "1"}, "phone2": {"key": "value"}}}</msg>
+<status status="PASS" starttime="20200827 20:18:40.523" endtime="20200827 20:18:40.524"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>sample.json</arg>
+<arg>${new_obj}</arg>
+<arg>UTF-8</arg>
+</arguments>
+<msg timestamp="20200827 20:18:40.534" level="INFO" html="yes">Created file '&lt;a href="file://D:\SmartReasons\Pruebas\Pruebas App Y Web Robot\REPO\PruebasRobotFramework\httprequest\prueba\sample.json"&gt;D:\SmartReasons\Pruebas\Pruebas App Y Web Robot\REPO\PruebasRobotFramework\httprequest\prueba\sample.json&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200827 20:18:40.524" endtime="20200827 20:18:40.534"></status>
+</kw>
+<status status="PASS" starttime="20200827 20:18:40.463" endtime="20200827 20:18:40.535"></status>
+</kw>
+<kw name="test2">
+<kw name="Load JSON From File" library="JSONLibrary">
+<doc>Load JSON from file.</doc>
+<arguments>
+<arg>sample.json</arg>
+</arguments>
+<assign>
+<var>${json_obj}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.539" level="INFO">${json_obj} = {'Phones': {'debug': 'on', 'phone1': {'key': 'value', 'driver': '1'}, 'phone2': {'key': 'value'}}}</msg>
+<status status="PASS" starttime="20200827 20:18:40.536" endtime="20200827 20:18:40.539"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>contrasenia=${contrasenia}</arg>
+</arguments>
+<assign>
+<var>${object_to_add}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.541" level="INFO">${object_to_add} = {'contrasenia': '102346578'}</msg>
+<status status="PASS" starttime="20200827 20:18:40.540" endtime="20200827 20:18:40.541"></status>
+</kw>
+<kw name="Add Object To Json" library="JSONLibrary">
+<doc>Add an dictionary or list object to json object using json_path</doc>
+<arguments>
+<arg>${json_obj}</arg>
+<arg>$..$</arg>
+<arg>${object_to_add}</arg>
+</arguments>
+<assign>
+<var>${json_obj}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.593" level="INFO">${json_obj} = {'Phones': {'debug': 'on', 'phone1': {'key': 'value', 'driver': '1'}, 'phone2': {'key': 'value'}}, 'contrasenia': '102346578'}</msg>
+<status status="PASS" starttime="20200827 20:18:40.541" endtime="20200827 20:18:40.593"></status>
+</kw>
+<kw name="Convert JSON To String" library="JSONLibrary">
+<doc>Convert JSON object to string</doc>
+<arguments>
+<arg>${json_obj}</arg>
+</arguments>
+<assign>
+<var>${new_obj}</var>
+</assign>
+<msg timestamp="20200827 20:18:40.594" level="INFO">${new_obj} = {"Phones": {"debug": "on", "phone1": {"key": "value", "driver": "1"}, "phone2": {"key": "value"}}, "contrasenia": "102346578"}</msg>
+<status status="PASS" starttime="20200827 20:18:40.593" endtime="20200827 20:18:40.594"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>sample.json</arg>
+<arg>${new_obj}</arg>
+<arg>UTF-8</arg>
+</arguments>
+<msg timestamp="20200827 20:18:40.649" level="INFO" html="yes">Created file '&lt;a href="file://D:\SmartReasons\Pruebas\Pruebas App Y Web Robot\REPO\PruebasRobotFramework\httprequest\prueba\sample.json"&gt;D:\SmartReasons\Pruebas\Pruebas App Y Web Robot\REPO\PruebasRobotFramework\httprequest\prueba\sample.json&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200827 20:18:40.594" endtime="20200827 20:18:40.649"></status>
+</kw>
+<status status="PASS" starttime="20200827 20:18:40.536" endtime="20200827 20:18:40.649"></status>
+</kw>
+<status status="PASS" starttime="20200827 20:18:40.462" endtime="20200827 20:18:40.651" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200827 20:18:40.110" endtime="20200827 20:18:40.655"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Ppp">Ppp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
