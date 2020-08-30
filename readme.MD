@@ -55,3 +55,17 @@ pip install robotframework-jsonlibrary
 ```
 pip install RESTinstance
 ```
+
+- _Para usar faker usamos faker_
+
+```
+pip install robotframework-faker
+```
+- _Para importar webdrivermanager_
+
+```
+pip install webdrivermanager
+webdrivermanager firefox chrome --linkpath /usr/local/bin
+```
+
+pip install robotframework-excellib

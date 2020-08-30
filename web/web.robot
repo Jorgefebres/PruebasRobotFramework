@@ -4,6 +4,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${url}            http://localhost:4200/
+${url_login}    http://localhost:4200/inicio
 ${url_establecimiento}    http://localhost:4200/delivery/configuracion/establecimiento
 ${url_promociones}    http://localhost:4200/cliente/productos/promociones
 ${browser}        chrome 
@@ -17,11 +18,27 @@ Open my Browser
 Close Browsers
     Close All Browsers
 
+Open Login
+    Go To    ${url_login}
+    Click Element   //*[@id="iniciaSesion"]
+    Wait Until Element Is Visible    //*[@id="mat-tab-label-0-1"]    100
+    Click Element   //*[@id="mat-tab-label-0-1"]
+    Input Text      //*[@id="mat-input-2"]      Sideral
+    Input Text      //*[@id="mat-input-3"]      12345
+    Click Element   //*[@id="ingresarLogin"]
+
 Open Establecimiento
     Go To    ${url_establecimiento}
 
 Open Promociones
     Go To    ${url_establecimiento}
+
+Login
+    Click Element   //*[@id="iniciaSesion"]
+    Click Element   //*[@id="mat-tab-label-0-1"]
+    Input Text      //*[@id="mat-input-2"]      Sideral
+    Input Text      //*[@id="mat-input-3"]      12345
+    Click Element   //*[@id="ingresarLogin"]
 
 Text Area
     [Arguments]    ${nombre}    ${descripcion}  ${ruc}  ${dni}  ${correo}   ${telefono}    ${direccion}
