@@ -4,17 +4,16 @@ Resource          web.robot
 
 Suite Setup       Open my Browser
 Suite Teardown    Close Browsers
-Test Setup        Open Establecimiento
+Test Setup        Open Login
 Test Template     Invalid Text
 
 *** Test Cases ***
 Invalid Text 
-    Invalid Text    ${nombre}    ${descripcion}  ${ruc}  ${dni}  ${correo}   ${telefono}    ${direccion}    ${mensaje}
+    Invalid Text    ${nombre}    ${ruc}   ${correo}   ${telefono}    ${direccion}
 
 *** Keywords ***
 Invalid Text
-    [Arguments]    ${nombre}    ${descripcion}  ${ruc}  ${dni}  ${correo}   ${telefono}    ${direccion}     ${mensaje}
-    Text Area    ${nombre}    ${descripcion}  ${ruc}  ${dni}  ${correo}   ${telefono}    ${direccion}
+    [Arguments]    ${nombre}   ${ruc}  ${correo}   ${telefono}    ${direccion}
+    Text Area    ${nombre}   ${correo}   ${telefono}    ${direccion}
     Log    "Estas pruebas :v"
-    Sleep    5
-    Result      ${mensaje}
+    Sleep    2

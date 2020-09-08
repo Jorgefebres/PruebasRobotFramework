@@ -12,7 +12,7 @@ ${browser}        chrome
 *** Keywords ***
 Open my Browser
     Open Browser    ${url}    browser=${browser}
-    Set Window Position    0    0
+    Set Window Position    100    100
     Set Window Size    960    1000
 
 Close Browsers
@@ -23,9 +23,16 @@ Open Login
     Click Element   //*[@id="iniciaSesion"]
     Wait Until Element Is Visible    //*[@id="mat-tab-label-0-1"]    100
     Click Element   //*[@id="mat-tab-label-0-1"]
+    Click Element   //*[@id="mat-tab-label-0-0"]
+    Click Element   //*[@id="mat-tab-label-0-1"]
+    Wait Until Element Is Visible    //*[@id="mat-input-2"]    100
     Input Text      //*[@id="mat-input-2"]      Sideral
     Input Text      //*[@id="mat-input-3"]      12345
+    Sleep    5
     Click Element   //*[@id="ingresarLogin"]
+    Sleep    3
+    Go To    ${url_establecimiento}
+    Sleep    3
 
 Open Establecimiento
     Go To    ${url_establecimiento}
@@ -41,15 +48,19 @@ Login
     Click Element   //*[@id="ingresarLogin"]
 
 Text Area
-    [Arguments]    ${nombre}    ${descripcion}  ${ruc}  ${dni}  ${correo}   ${telefono}    ${direccion}
+    [Arguments]    ${nombre}    ${correo}   ${telefono}    ${direccion}
+    Wait Until Element Is Visible    //*[@id="Botoncito"]    100
+    Click Element   //*[@id="Botoncito"]
+    Wait Until Element Is Visible    //*[@id="nombreEstablecimiento"]    100
     Input Text    //*[@id="nombreEstablecimiento"]    ${nombre}
-    Input Text    //*[@id="descripcionEstablecimiento"]    ${descripcion}
-    Input Text    //*[@id="rucEstablecimiento"]    ${ruc}
-    Input Text    //*[@id="dniEstablecimiento"]    ${dni}
     Input Text    //*[@id="correoEstablecimiento"]    ${correo}
     Input Text    //*[@id="telefonoEstablecimiento"]    ${telefono}
     Input Text    //*[@id="direccionEstablecimiento"]    ${direccion}
-
-Result
-    [Arguments]    ${mensaje}
-    Element Text Should Be      //*[@id="labelTest"]    ${mensaje}
+    Sleep    5
+    Click Element   //*[@id="AceptarbUTTON"]
+    Sleep    5
+    Click Element       //*[@id="botonUsuarin"]
+    Sleep       5
+    Click Element       //*[@id="logoutButton"]
+    Sleep       5
+    

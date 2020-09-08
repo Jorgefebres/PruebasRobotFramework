@@ -56,7 +56,7 @@ pip install robotframework-jsonlibrary
 pip install RESTinstance
 ```
 
-- _Para usar faker usamos faker_
+- _Para generar datos con libreria Faker:_
 
 ```
 pip install robotframework-faker
